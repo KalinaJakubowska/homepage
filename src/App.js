@@ -1,5 +1,12 @@
+import { GlobalStyle } from "./GlobalStyle";
+
 function App() {
-  return <>Hi!</>;
+  return (
+    <>
+      <GlobalStyle />
+      <body>Hi!</body>
+    </>
+  );
 }
 
 export default App;
