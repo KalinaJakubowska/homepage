@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
    body {
       font-family: 'Inter', sans-serif;
+      letter-spacing: 0.05em;
       background: #FBFBFE;
       min-height: 100vh;
       max-width: 1244px;
