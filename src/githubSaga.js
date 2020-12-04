@@ -10,7 +10,7 @@ function* fetchGithubProjectsHandler() {
   try {
     const githubData = yield call(
       getApiData,
-      "https://api.github.com/users/KalinaJakubowska/repos"
+      "https://api.github.com/users/KalinaJakubowska/repos?page=1"
     );
     yield put(fetchGithubProjectsSuccess(githubData));
   } catch (error) {
