@@ -1,10 +1,10 @@
 import BigTile from "./common/tiles/BigTile";
 import { GlobalStyle } from "./GlobalStyle";
-import { skillset } from "./common/personalInfo";
-import { plans } from "./common/personalInfo";
+import { personalInfo } from "./common/personalInfo";
 import { useEffect } from "react";
 import { fetchGithubProjects } from "./githubSlice";
 import { useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,12 +16,14 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BigTile
-        title={skillset.title}
-        icon={skillset.icon}
-        list={skillset.list}
-      />
-      <BigTile title={plans.title} icon={plans.icon} list={plans.list} />
+      {personalInfo.map((sectionInfo) => (
+        <BigTile
+          key={nanoid()}
+          title={sectionInfo.title}
+          icon={sectionInfo.icon}
+          list={sectionInfo.list}
+        />
+      ))}
     </>
   );
 }
