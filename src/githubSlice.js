@@ -27,6 +27,7 @@ export const {
   fetchGithubProjectsSuccess,
   fetchGithubProjectsError,
 } = githubSlice.actions;
-export const selectGithubProjects = (state) => state.github.githubProjects;
+export const selectGithubProjects = state => state.github.githubProjects;
+export const selectLoading = state => state.github.loading;
 
 export default githubSlice.reducer;
