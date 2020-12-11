@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { fetchGithubProjects } from "./githubSlice";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
+import Github from "./common/tiles/Github";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ function App() {
           list={sectionInfo.list}
         />
       ))}
+      <Github />
     </>
   );
 }
