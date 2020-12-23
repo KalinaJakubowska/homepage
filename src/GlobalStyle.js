@@ -13,9 +13,10 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    body {
+      color: ${({ theme }) => theme.color.slateGray};
       font-family: 'Inter', sans-serif;
       letter-spacing: 0.05em;
-      background: #FBFBFE;
+      background: ${({ theme }) => theme.color.whiteLiliac};
       min-height: 100vh;
       max-width: 1244px;
       padding: 14px;

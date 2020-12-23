@@ -26,8 +26,8 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   font-size: 18px;
   line-height: 1.4;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.color.slateGray};
   &::marker {
-      color: blue;
+    color: ${({ theme }) => theme.color.scienceBlue};
   }
 `;
