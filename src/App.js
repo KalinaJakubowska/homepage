@@ -6,6 +6,8 @@ import { fetchGithubProjects } from "./githubSlice";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import Github from "./common/tiles/Github";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
 function App() {
   const dispatch = useDispatch();
@@ -15,7 +17,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       {personalInfo.map((sectionInfo) => (
         <BigTile
@@ -26,7 +28,7 @@ function App() {
         />
       ))}
       <Github />
-    </>
+    </ThemeProvider>
   );
 }
 
