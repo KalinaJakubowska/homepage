@@ -1,7 +1,10 @@
+import rocket from "./../assets/icons/rocket.svg";
+import tools from "./../assets/icons/tools.svg";
+
 export const personalInfo = [
   {
     title: "My skillset includes",
-    icon: "🛠️",
+    icon: tools,
     list: [
       "JavaScript ES6+",
       "React",
@@ -29,7 +32,7 @@ export const personalInfo = [
   },
   {
     title: "What I want to learn next",
-    icon: "🚀",
+    icon: rocket,
     list: [
       "Typescript",
       "Gatsby.js",
