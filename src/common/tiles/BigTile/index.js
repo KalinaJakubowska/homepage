@@ -1,12 +1,12 @@
 import React from "react";
-import { BigTileWrapper, Title, List, ListItem } from "./styled";
+import { BigTileWrapper, Title, List, ListItem, Icon } from "./styled";
 
 const BigTile = ({ title, icon, list }) => {
   return (
     <BigTileWrapper>
       <Title>
         {title}
-        {icon}
+        <Icon src={icon}></Icon>
       </Title>
       <List>
         {list.map((item) => (

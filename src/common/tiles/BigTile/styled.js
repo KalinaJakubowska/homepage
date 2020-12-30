@@ -32,3 +32,9 @@ export const ListItem = styled.li`
     color: ${({ theme }) => theme.color.button};
   }
 `;
+
+export const Icon = styled.img`
+  height: 32px;
+  width: auto;
+  margin-left: 16px;
+`;
