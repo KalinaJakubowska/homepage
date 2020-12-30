@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { fetchGithubProjects } from "./githubSlice";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
-import Github from "./common/tiles/Github";
+import GithubTile from "./common/tiles/GithubTile";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 
@@ -27,7 +27,7 @@ function App() {
           list={sectionInfo.list}
         />
       ))}
-      <Github />
+      <GithubTile />
     </ThemeProvider>
   );
 }
