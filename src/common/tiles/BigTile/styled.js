@@ -13,6 +13,7 @@ export const Title = styled.h2`
   margin: 0px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(209, 213, 218, 0.3);
+  color: ${({ theme }) => theme.color.title};
 `;
 
 export const List = styled.ul`
