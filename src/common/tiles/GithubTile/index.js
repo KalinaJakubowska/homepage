@@ -21,7 +21,9 @@ const Github = () => {
         githubProjects.map((project) => (
           <GithubTileWrapper key={nanoid()}>
             <GithubTitle>{project.name}</GithubTitle>
-            <GithubDescription>{project.description}</GithubDescription>
+            {project.description && (
+              <GithubDescription>{project.description}</GithubDescription>
+            )}
             {project.homepage && (
               <GithubLinkWrapper>
                 Demo: <GithubLink>{project.homepage}</GithubLink>
