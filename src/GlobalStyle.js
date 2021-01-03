@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
    ::before,
    ::after {
       box-sizing: inherit;
+      overflow-wrap: anywhere;
    }
 
    body {
