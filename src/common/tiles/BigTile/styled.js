@@ -26,7 +26,6 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   line-height: 1.4;
-  color: ${({ theme }) => theme.color.text};
   &::marker {
     color: ${({ theme }) => theme.color.button};
   }
