@@ -20,24 +20,27 @@ const Github = () => {
   const isError = useSelector(selectError);
 
   return (
-    <Checker isLoading={isLoading} isError={isError}>
+    <>
       <GithubHeader>
-        <GithubLogo fill={theme.color.button}/>
+        <GithubLogo fill={theme.color.button} />
         <Title>Portfolio</Title>
         <Description>My recent projects</Description>
       </GithubHeader>
-      <GithubTilesContainer>
-        {githubProjects.map((project) => (
-          <GithubTile
-            name={project.name}
-            description={project.description}
-            homepage={project.homepage}
-            html_url={project.html_url}
-            key={nanoid()}
-          />
-        ))}
-      </GithubTilesContainer>
-    </Checker>
+
+      <Checker isLoading={isLoading} isError={isError}>
+        <GithubTilesContainer>
+          {githubProjects.map((project) => (
+            <GithubTile
+              name={project.name}
+              description={project.description}
+              homepage={project.homepage}
+              html_url={project.html_url}
+              key={nanoid()}
+            />
+          ))}
+        </GithubTilesContainer>
+      </Checker>
+    </>
   );
 };
 
