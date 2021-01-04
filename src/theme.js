@@ -14,4 +14,5 @@ export const theme = {
     tileBackground: colors.white,
     background: colors.whiteLiliac,
   },
+  colors,
 };
