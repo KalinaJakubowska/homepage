@@ -15,12 +15,10 @@ export const GithubTitle = styled.div`
 
 export const GithubDescription = styled.p`
   line-height: 1.4;
-  color: ${({ theme }) => theme.color.text};
   margin: 24px 0;
 `;
 
 export const GithubLinkWrapper = styled.span`
-  color: ${({ theme }) => theme.color.text};
   display: block;
   margin-top: 8px;
 `;
