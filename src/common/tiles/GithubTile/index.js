@@ -14,12 +14,12 @@ const GithubTile = ({ name, description, homepage, html_url }) => {
       {description && <GithubDescription>{description}</GithubDescription>}
       {homepage && (
         <GithubLinkWrapper>
-          Demo: <GithubLink>{homepage}</GithubLink>
+          Demo: <GithubLink href={homepage}>{homepage}</GithubLink>
         </GithubLinkWrapper>
       )}
       {html_url && (
         <GithubLinkWrapper>
-          Code: <GithubLink>{html_url}</GithubLink>
+          Code: <GithubLink href={html_url}>{html_url}</GithubLink>
         </GithubLinkWrapper>
       )}
     </GithubTileWrapper>

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { TileWrapper } from "../tileStyles";
 
 export const GithubTileWrapper = styled(TileWrapper)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 6px solid rgba(209, 213, 218, 0.3);
   padding: 56px;
 `;
@@ -24,6 +27,7 @@ export const GithubLinkWrapper = styled.span`
 `;
 
 export const GithubLink = styled.a`
+  text-decoration: none;
   display: inline;
   color: ${({ theme }) => theme.color.button};
 `;
