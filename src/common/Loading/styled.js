@@ -11,7 +11,7 @@ export const LoadingContainer = styled.div`
 export const Info = styled.p`
   font-size: 20px;
   line-height: 1.4;
-  margin: 0;
+  margin: 88px 0 0;
   color: ${({ theme }) => theme.color.title};
 `;
 
