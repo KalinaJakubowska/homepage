@@ -4,6 +4,7 @@ import Github from "./../features/Github/index";
 import BigTile from "./../common/tiles/BigTile";
 import { personalInfo } from "./../common/personalInfo";
 import Header from "../features/Header";
+import Footer from "../features/Footer";
 
 const Homepage = () => (
   <>
@@ -17,6 +18,7 @@ const Homepage = () => (
       />
     ))}
     <Github />
+    <Footer />
   </>
 );
 export default Homepage;
