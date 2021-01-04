@@ -1,29 +1,21 @@
 import React from "react";
-import { GithubContainer } from "./styled";
-import {
-  selectGithubProjects,
-  selectLoading,
-  selectError,
-} from "./../../githubSlice";
 import { useSelector } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
+import { GithubContainer } from "./styled";
+import { selectGithubProjects } from "./../../githubSlice";
 import GithubTile from "../../common/tiles/GithubTile";
-import Error from "./../../common/Error";
-import Loading from "./../../common/Loading";
+import { selectError, selectLoading } from "../../githubSlice";
+import Checker from "../../common/Checker";
 
 const Github = () => {
+  const githubProjects = useSelector(selectGithubProjects);
   const isLoading = useSelector(selectLoading);
   const isError = useSelector(selectError);
-  const githubProjects = useSelector(selectGithubProjects);
 
   return (
-    <GithubContainer>
-      {isLoading ? (
-        <Loading />
-      ) : isError ? (
-        <Error />
-      ) : (
-        githubProjects.map((project) => (
+    <Checker isLoading={isLoading} isError={isError}>
+      <GithubContainer>
+        {githubProjects.map((project) => (
           <GithubTile
             name={project.name}
             description={project.description}
@@ -31,9 +23,9 @@ const Github = () => {
             html_url={project.html_url}
             key={nanoid()}
           />
-        ))
-      )}
-    </GithubContainer>
+        ))}
+      </GithubContainer>
+    </Checker>
   );
 };
 
