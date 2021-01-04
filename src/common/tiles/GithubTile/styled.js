@@ -1,12 +1,6 @@
 import styled from "styled-components";
 import { TileWrapper } from "../tileStyles";
 
-export const GithubContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
-`;
-
 export const GithubTileWrapper = styled(TileWrapper)`
   border: 6px solid rgba(209, 213, 218, 0.3);
   padding: 56px;

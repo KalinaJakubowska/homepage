@@ -1,6 +1,6 @@
 import React from "react";
 import { nanoid } from "@reduxjs/toolkit";
-import GithubTile from "./../common/tiles/GithubTile";
+import Github from "./../features/Github/index";
 import BigTile from "./../common/tiles/BigTile";
 import { personalInfo } from "./../common/personalInfo";
 
@@ -14,7 +14,7 @@ const Homepage = () => (
         list={sectionInfo.list}
       />
     ))}
-    <GithubTile />
+    <Github />
   </>
 );
 export default Homepage;
