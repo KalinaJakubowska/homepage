@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    body {
-      color: ${({ theme }) => theme.color.slateGray};
+      color: ${({ theme }) => theme.color.text};
       font-family: 'Inter', sans-serif;
       letter-spacing: 0.05em;
       background: ${({ theme }) => theme.color.background};
