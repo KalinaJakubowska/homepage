@@ -7,7 +7,8 @@ import {
   Description,
   Photo,
 } from "./styled";
-import { Button } from "./../../common/Button";
+import { Button, ButtonText } from "./../../common/Button";
+import { ReactComponent as MessageIcon } from "./../../assets/icons/message.svg";
 
 const Header = () => {
   return (
@@ -20,7 +21,10 @@ const Header = () => {
           I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
         </Description>
-        <Button>Hire me</Button>
+        <Button>
+          <MessageIcon />
+          <ButtonText>Hire Me</ButtonText>
+        </Button>
       </Details>
     </HeaderWrapper>
   );
