@@ -1,5 +1,5 @@
 import React from "react";
-import { BigTileWrapper, Title, List, ListItem, Icon } from "./styled";
+import { BigTileWrapper, Title, List, ListItem, Icon, Point } from "./styled";
 
 const BigTile = ({ title, icon, list }) => {
   return (
@@ -10,7 +10,10 @@ const BigTile = ({ title, icon, list }) => {
       </Title>
       <List>
         {list.map((item) => (
-          <ListItem key={item}>{item}</ListItem>
+          <ListItem key={item}>
+            <Point />
+            {item}
+          </ListItem>
         ))}
       </List>
     </BigTileWrapper>
