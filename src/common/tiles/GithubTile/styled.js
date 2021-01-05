@@ -14,11 +14,12 @@ export const GithubTitle = styled.div`
   font-size: 24px;
   line-height: 1.4;
   color: ${({ theme }) => theme.color.button};
+  margin-bottom: 24px;
 `;
 
 export const GithubDescription = styled.p`
   line-height: 1.4;
-  margin: 24px 0;
+  margin: 0 0 24px 0;
 `;
 
 export const GithubLinkWrapper = styled.span`
