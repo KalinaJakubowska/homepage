@@ -40,7 +40,7 @@ export const Point = styled.div`
 `;
 
 export const Icon = styled.img`
-  height: 32px;
+  height: 24px;
   width: auto;
   margin-left: 16px;
 `;
