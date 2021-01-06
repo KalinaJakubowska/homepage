@@ -13,6 +13,7 @@ export const theme = {
     text: colors.slateGray,
     tileBackground: colors.white,
     background: colors.whiteLiliac,
+    githubTileHover: "rgba(3, 102, 214, 0.2)",
   },
   colors,
 };

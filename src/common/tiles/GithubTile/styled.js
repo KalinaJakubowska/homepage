@@ -7,6 +7,10 @@ export const GithubTileWrapper = styled(TileWrapper)`
   justify-content: space-between;
   border: 6px solid rgba(209, 213, 218, 0.3);
   padding: 56px;
+
+  :hover {
+    border: 6px solid ${({theme}) => theme.color.githubTileHover};
+  }
 `;
 
 export const GithubTitle = styled.div`
