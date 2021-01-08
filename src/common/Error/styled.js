@@ -5,8 +5,12 @@ export const ErrorWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 430px;
-  margin: auto;
+  margin: 96px auto 0;
   text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    margin-top: 56px;
+  }
 `;
 
 export const Alert = styled.p`
@@ -15,6 +19,11 @@ export const Alert = styled.p`
   line-height: 1.2;
   font-weight: bold;
   margin: 24px 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    margin-top: 16px;
+    font-size: 18px;
+  }
 `;
 
 export const Explanation = styled.p`
@@ -22,4 +31,8 @@ export const Explanation = styled.p`
   margin: 32px 0 0;
   font-size: 20px;
   line-height: 1.4;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 14px;
+  }
 `;
