@@ -1,8 +1,8 @@
 const breakpoints = {
-  mobile: "320px",
-  bigMobile: "480px",
-  ipad: "768px",
-  bigScreen: "1024px",
+  mobile: "320",
+  bigMobile: "480",
+  ipad: "768",
+  bigScreen: "1024",
 };
 
 const colors = {
