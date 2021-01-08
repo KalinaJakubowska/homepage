@@ -11,7 +11,7 @@ import {
 } from "./styled";
 import { ReactComponent as LightThemeSwitchButton } from "./../../assets/icons/lightTheme.svg";
 import { ReactComponent as DarkThemeSwitchButton } from "./../../assets/icons/darkTheme.svg";
-import { Button, ButtonText } from "./../../common/Button";
+import { ButtonLink, ButtonText } from "../../common/ButtonLink";
 import { ReactComponent as MessageIcon } from "./../../assets/icons/message.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsDarkTheme, switchIsDarkTheme } from "../../themeSlice";
@@ -39,10 +39,10 @@ const Header = () => {
           I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
         </Description>
-        <Button>
+        <ButtonLink>
           <MessageIcon />
           <ButtonText>Hire Me</ButtonText>
-        </Button>
+        </ButtonLink>
       </Details>
     </HeaderWrapper>
   );

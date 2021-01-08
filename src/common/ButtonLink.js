@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const ButtonLink = styled.a`
+  text-decoration: none;
   display: flex;
   align-items: center;
   background-color: ${({ theme }) => theme.color.button};
@@ -13,7 +14,6 @@ export const Button = styled.button`
   border-radius: 4px;
   width: fit-content;
   margin: 32px 0 0 0;
-  outline: none;
   letter-spacing: 0.05em;
 
   :hover {

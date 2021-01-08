@@ -1,7 +1,7 @@
 import React from "react";
 import { ErrorWrapper, Alert, Explanation } from "./styled";
 import { ReactComponent as DangerIcon } from "./../../assets/icons/danger.svg";
-import { Button } from "./../../common/Button";
+import { ButtonLink } from "../ButtonLink";
 
 const Error = () => (
   <ErrorWrapper>
@@ -11,7 +11,7 @@ const Error = () => (
       Sorry, failed to load Github projects. You can check them directly on
       Github.
     </Explanation>
-    <Button>Go to Github</Button>
+    <ButtonLink href="https://github.com/KalinaJakubowska">Go to Github</ButtonLink>
   </ErrorWrapper>
 );
 
