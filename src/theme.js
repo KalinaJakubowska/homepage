@@ -1,3 +1,10 @@
+const breakpoints = {
+  mobile: "320px",
+  bigMobile: "480px",
+  ipad: "768px",
+  bigScreen: "1024px",
+};
+
 const colors = {
   mineShaft: "#252525",
   scienceBlue: "#0366D6",
@@ -22,6 +29,7 @@ export const theme = {
     githubTileTitle: colors.scienceBlue,
   },
   colors,
+  breakpoints,
 };
 
 export const darkTheme = {
@@ -38,4 +46,5 @@ export const darkTheme = {
     githubTileTitle: colors.white,
   },
   colors,
+  breakpoints,
 };
