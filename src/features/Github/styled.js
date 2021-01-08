@@ -49,7 +49,7 @@ export const GithubTilesContainer = styled.div`
   grid-gap: 32px;
   margin-top: 24px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
   }

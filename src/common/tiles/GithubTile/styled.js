@@ -16,8 +16,12 @@ export const GithubTileWrapper = styled(TileWrapper)`
     padding: 36px;
   }
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    padding: 28px;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    padding: 24px;
+    padding: 16px;
   }
 `;
 
