@@ -21,7 +21,7 @@ export const Title = styled.h2`
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   justify-content: space-between;
   margin: 32px 0 0 0;
   grid-gap: 8px;
@@ -31,6 +31,7 @@ export const ListItem = styled.li`
   line-height: 1.4;
   display: flex;
   align-items: center;
+  margin-left: 0;
 `;
 
 export const Point = styled.div`
