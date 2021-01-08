@@ -6,8 +6,14 @@ import { ReactComponent as InstagramLogo } from "./../../assets/logos/instagramL
 
 export const FooterWrapper = styled.footer`
   margin: 120px 0 0 0;
-  width: 60%;
+  width: 700px;
+  max-width: 60%;
   margin-right: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+    margin-top: 48px;
+    max-width: unset;
+  }
 `;
 
 export const Message = styled.p`
@@ -24,34 +30,94 @@ export const Email = styled.p`
   font-weight: 900;
   color: ${({ theme }) => theme.color.title};
   margin: 24px 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigScreen}px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 12px 0 0;
+  }
 `;
 
 export const Description = styled.p`
   color: ${({ theme }) => theme.color.title};
   margin: 24px 0 0;
+  line-height: 1.4;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 12px 0 0;
+  }
 `;
 
 export const LogosContainer = styled.div`
   display: flex;
-  grid-gap: 24px;
   justify-content: start;
-  grid-template-columns: repeat(auto-fill, 48px);
-  grid-template-rows: 48px;
   margin: 56px 0 100px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+    margin: 40px 0 32px;
+  }
 `;
 
 export const StyledGithubLogo = styled(GithubLogo)`
   fill: ${({ theme }) => theme.color.title};
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
 `;
 
 export const StyledFacebookLogo = styled(FacebookLogo)`
   fill: ${({ theme }) => theme.color.title};
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
 `;
 
 export const StyledInstagramLogo = styled(InstagramLogo)`
   fill: ${({ theme }) => theme.color.title};
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
 `;
 
 export const StyledLinkedinLogo = styled(LinkedinLogo)`
   fill: ${({ theme }) => theme.color.title};
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
 `;

@@ -4,6 +4,14 @@ import { TileWrapper } from "../tileStyles";
 export const BigTileWrapper = styled(TileWrapper)`
   padding: 32px;
   margin: 72px auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+    margin: 48px 0 0 0;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    padding: 16px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -16,6 +24,10 @@ export const Title = styled.h2`
     ${({ theme, underline }) =>
       underline ? theme.colors.mercury : theme.color.bigTileTitleUnderline};
   color: ${({ theme }) => theme.color.title};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const List = styled.ul`
@@ -25,13 +37,22 @@ export const List = styled.ul`
   justify-content: space-between;
   margin: 32px 0 0 0;
   grid-gap: 8px;
+  padding-left: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ListItem = styled.li`
   line-height: 1.4;
   display: flex;
   align-items: center;
-  margin-left: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 `;
 
 export const Point = styled.div`

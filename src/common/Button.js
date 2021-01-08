@@ -27,6 +27,10 @@ export const Button = styled.button`
     box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
       -2px -2px 0px #8cc2ff;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const ButtonText = styled.span`
