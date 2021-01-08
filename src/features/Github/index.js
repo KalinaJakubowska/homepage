@@ -6,13 +6,12 @@ import {
   GithubHeader,
   Title,
   Description,
+  StyledGithubLogo,
 } from "./styled";
 import { selectGithubProjects } from "./../../githubSlice";
 import GithubTile from "../../common/tiles/GithubTile";
 import { selectError, selectLoading } from "../../githubSlice";
 import Checker from "../../common/Checker";
-import { ReactComponent as GithubLogo } from "./../../assets/logos/githubLogo.svg";
-import { theme } from "../../theme";
 
 const Github = () => {
   const githubProjects = useSelector(selectGithubProjects);
@@ -22,7 +21,7 @@ const Github = () => {
   return (
     <>
       <GithubHeader>
-        <GithubLogo fill={theme.color.button} />
+        <StyledGithubLogo />
         <Title>Portfolio</Title>
         <Description>My recent projects</Description>
       </GithubHeader>

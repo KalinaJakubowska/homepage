@@ -5,11 +5,11 @@ import {
   Email,
   Description,
   LogosContainer,
+  StyledGithubLogo,
+  StyledFacebookLogo,
+  StyledInstagramLogo,
+  StyledLinkedinLogo,
 } from "./styled";
-import { ReactComponent as GithubLogo } from "./../../assets/logos/githubLogo.svg";
-import { ReactComponent as FacebookLogo } from "./../../assets/logos/facebookLogo.svg";
-import { ReactComponent as LinkedinLogo } from "./../../assets/logos/linkedinLogo.svg";
-import { ReactComponent as InstagramLogo } from "./../../assets/logos/instagramLogo.svg";
 
 const Footer = () => {
   return (
@@ -22,10 +22,10 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <GithubLogo />
-        <FacebookLogo />
-        <LinkedinLogo />
-        <InstagramLogo />
+        <StyledGithubLogo />
+        <StyledFacebookLogo />
+        <StyledLinkedinLogo />
+        <StyledInstagramLogo />
       </LogosContainer>
     </FooterWrapper>
   );

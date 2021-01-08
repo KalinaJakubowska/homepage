@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as GithubLogo } from "./../../assets/logos/githubLogo.svg";
 
 export const GithubHeader = styled.div`
   display: flex;
@@ -26,4 +27,8 @@ export const Description = styled.p`
   font-size: 20px;
   line-height: 1.4;
   margin: 8px 0 0 0;
+`;
+
+export const StyledGithubLogo = styled(GithubLogo)`
+  fill: ${({ theme }) => theme.color.button};
 `;
