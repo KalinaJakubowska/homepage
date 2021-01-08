@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  margin: 101px auto 63px;
-  align-items: center;
+  margin: 100px auto 56px;
+  align-items: start;
   position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
     flex-direction: column;
+    margin-top: 24px;
   }
 `;
 
@@ -18,7 +19,7 @@ export const Photo = styled.div`
   border-radius: 50%;
   flex-shrink: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigScreen}px) {
     width: 300px;
     height: 300px;
   }
@@ -36,7 +37,10 @@ export const Details = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
     margin: 20px 0 0 0;
-    align-items: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    margin: 12px 0 0 0;
   }
 `;
 
@@ -66,12 +70,9 @@ export const Description = styled.p`
   line-height: 1.4;
   margin: 35px 0 0 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
-    text-align: center;
-  }
-
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 17px;
+    margin-top: 16px;
   }
 `;
 
