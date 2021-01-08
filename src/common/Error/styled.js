@@ -5,11 +5,11 @@ export const ErrorWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 430px;
-  margin: 96px auto 0;
+  margin: 96px auto 140px;
   text-align: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    margin-top: 56px;
+    margin: 56px auto 76px;
   }
 `;
 
