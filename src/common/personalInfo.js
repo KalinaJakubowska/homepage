@@ -43,5 +43,6 @@ export const personalInfo = [
       "Cypress",
       "React Native",
     ],
+    underline: true,
   },
 ];

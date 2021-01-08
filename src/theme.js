@@ -10,6 +10,7 @@ const colors = {
 
 export const theme = {
   color: {
+    bigTileTitleUnderline: "rgba(209, 213, 218, 0.3)",
     title: colors.mineShaft,
     button: colors.scienceBlue,
     text: colors.slateGray,
@@ -25,6 +26,7 @@ export const theme = {
 
 export const darkTheme = {
   color: {
+    bigTileTitleUnderline: "rgba(209, 213, 218, 0.1)",
     title: colors.white,
     button: colors.dodgerBlue,
     text: colors.white,

@@ -12,7 +12,9 @@ export const Title = styled.h2`
   line-height: 1.2;
   margin: 0px;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(209, 213, 218, 0.3);
+  border-bottom: 1px solid
+    ${({ theme, underline }) =>
+      underline ? theme.colors.mercury : theme.color.bigTileTitleUnderline};
   color: ${({ theme }) => theme.color.title};
 `;
 
