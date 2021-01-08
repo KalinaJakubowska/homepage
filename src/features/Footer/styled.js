@@ -23,12 +23,14 @@ export const Message = styled.p`
   text-transform: uppercase;
 `;
 
-export const Email = styled.p`
+export const Email = styled.a`
+  display: block;
+  text-decoration: none;
   font-size: 32px;
   line-height: 1.2;
   font-weight: 900;
   color: ${({ theme }) => theme.color.title};
-  margin: 24px 0 0;
+  margin-top: 24px;
 
   :hover {
     color: ${({ theme }) => theme.color.button};
