@@ -31,6 +31,10 @@ export const Email = styled.p`
   color: ${({ theme }) => theme.color.title};
   margin: 24px 0 0;
 
+  :hover {
+    color: ${({ theme }) => theme.color.button};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.bigScreen}px) {
     font-size: 28px;
     line-height: 1.2;
@@ -76,6 +80,10 @@ export const StyledGithubLogo = styled(GithubLogo)`
   height: 48px;
   margin-right: 24px;
 
+  :hover {
+    fill: ${({ theme }) => theme.color.button};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     width: 32px;
     height: 32px;
@@ -89,6 +97,9 @@ export const StyledFacebookLogo = styled(FacebookLogo)`
   height: 48px;
   margin-right: 24px;
 
+  :hover {
+    fill: ${({ theme }) => theme.color.button};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     width: 32px;
     height: 32px;
@@ -102,6 +113,9 @@ export const StyledInstagramLogo = styled(InstagramLogo)`
   height: 48px;
   margin-right: 24px;
 
+  :hover {
+    fill: ${({ theme }) => theme.color.button};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     width: 32px;
     height: 32px;
@@ -115,6 +129,9 @@ export const StyledLinkedinLogo = styled(LinkedinLogo)`
   height: 48px;
   margin-right: 24px;
 
+  :hover {
+    fill: ${({ theme }) => theme.color.button};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     width: 32px;
     height: 32px;
