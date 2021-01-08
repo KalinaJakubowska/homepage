@@ -39,7 +39,7 @@ const Header = () => {
           I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
         </Description>
-        <ButtonLink>
+        <ButtonLink href="mailto:kaljakubowska@gmail.pl">
           <MessageIcon />
           <ButtonText>Hire Me</ButtonText>
         </ButtonLink>
