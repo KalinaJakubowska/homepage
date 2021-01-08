@@ -9,6 +9,7 @@ import {
   StyledFacebookLogo,
   StyledInstagramLogo,
   StyledLinkedinLogo,
+  Link,
 } from "./styled";
 
 const Footer = () => {
@@ -22,10 +23,10 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <StyledGithubLogo />
-        <StyledFacebookLogo />
-        <StyledLinkedinLogo />
-        <StyledInstagramLogo />
+        <Link href="https://github.com/KalinaJakubowska"><StyledGithubLogo /></Link>
+        <Link href="https://www.facebook.com/kalina.brzezinska"><StyledFacebookLogo /></Link>
+        <Link href="https://www.linkedin.com/in/kalina-j-80a6031aa/"><StyledLinkedinLogo /></Link>
+        <Link href="https://www.instagram.com/witillie/"><StyledInstagramLogo /></Link>
       </LogosContainer>
     </FooterWrapper>
   );

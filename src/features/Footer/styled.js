@@ -137,3 +137,5 @@ export const StyledLinkedinLogo = styled(LinkedinLogo)`
     margin-right: 16px;
   }
 `;
+
+export const Link = styled.a``;
