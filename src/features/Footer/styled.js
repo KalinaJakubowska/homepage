@@ -6,7 +6,6 @@ import { ReactComponent as InstagramLogo } from "./../../assets/logos/instagramL
 
 export const FooterWrapper = styled.footer`
   margin: 120px 0 0 0;
-  width: 700px;
   max-width: 60%;
   margin-right: auto;
 
