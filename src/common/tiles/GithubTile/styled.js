@@ -9,7 +9,7 @@ export const GithubTileWrapper = styled(TileWrapper)`
   padding: 56px;
 
   :hover {
-    border: 6px solid ${({theme}) => theme.color.githubTileHover};
+    border: 6px solid ${({ theme }) => theme.color.githubTileHover};
   }
 `;
 
