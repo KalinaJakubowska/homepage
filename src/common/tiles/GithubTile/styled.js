@@ -65,6 +65,11 @@ export const GithubLink = styled.a`
   text-decoration: none;
   display: inline;
   color: ${({ theme }) => theme.color.button};
+  border-bottom: 1px solid ${({theme}) => theme.color.githubTileHover};
+
+  :hover {
+    filter: brightness(120%);
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 14px;
