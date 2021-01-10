@@ -5,13 +5,17 @@ import { ReactComponent as LinkedinLogo } from "./../../assets/logos/linkedinLog
 import { ReactComponent as InstagramLogo } from "./../../assets/logos/instagramLogo.svg";
 
 export const FooterWrapper = styled.footer`
-  margin: 120px 0 0 0;
+  margin: 140px 0 0;
   max-width: 60%;
   margin-right: auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
-    margin-top: 48px;
+    margin-top: 76px;
     max-width: unset;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    margin-top: 56px;
   }
 `;
 
