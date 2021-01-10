@@ -13,6 +13,11 @@ export const Info = styled.p`
   line-height: 1.4;
   margin: 88px 0 0;
   color: ${({ theme }) => theme.color.title};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    font-size: 16px;
+    margin-top: 56px;
+  }
 `;
 
 export const Image = styled.img`
@@ -30,5 +35,13 @@ export const Image = styled.img`
     to {
       transform: rotate(360deg);
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
+    height: 76px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    height: 56px;
   }
 `;
