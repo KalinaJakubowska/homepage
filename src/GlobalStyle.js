@@ -23,5 +23,6 @@ export const GlobalStyle = createGlobalStyle`
       padding: 14px;
       margin: 0 auto;
       font-size: 18px;
+      transition: background 0.5s;
    }
 `;
