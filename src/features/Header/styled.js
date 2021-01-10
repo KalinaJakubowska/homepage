@@ -12,8 +12,7 @@ export const HeaderWrapper = styled.div`
   }
 `;
 
-export const Photo = styled.div`
-  background-color: ${({ theme }) => theme.colors.slateGray};
+export const Photo = styled.img`
   width: 398px;
   height: 398px;
   border-radius: 50%;
