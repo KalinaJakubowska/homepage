@@ -14,16 +14,18 @@ const GithubTile = ({ name, description, homepage, html_url }) => {
     <GithubTileWrapper>
       <GithubTitle>{name}</GithubTitle>
       {description && <GithubDescription>{description}</GithubDescription>}
-      {homepage && (
-        <GithubLinkWrapper>
-          Demo: <GithubLink href={homepage}>See demo</GithubLink>
-        </GithubLinkWrapper>
-      )}
-      {html_url && (
-        <GithubLinkWrapper>
-          Code: <GithubLink href={html_url}>Go to the repository</GithubLink>
-        </GithubLinkWrapper>
-      )}
+      <div>
+        {homepage && (
+          <GithubLinkWrapper>
+            Demo: <GithubLink href={homepage}>See demo</GithubLink>
+          </GithubLinkWrapper>
+        )}
+        {html_url && (
+          <GithubLinkWrapper>
+            Code: <GithubLink href={html_url}>Go to the repository</GithubLink>
+          </GithubLinkWrapper>
+        )}
+      </div>
     </GithubTileWrapper>
   );
 };
