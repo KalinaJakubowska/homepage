@@ -1,5 +1,5 @@
 # Welcome to my personal homepage! 😃
-## kalinajakubowska.github.io/homepage
+## [Homepage](https://kalinajakubowska.github.io/homepage/)
 
 ---
 
