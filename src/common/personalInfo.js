@@ -46,3 +46,5 @@ export const personalInfo = [
     underline: true,
   },
 ];
+
+export const githubUserName = "KalinaJakubowska";
