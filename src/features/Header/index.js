@@ -15,7 +15,7 @@ import { ButtonLink, ButtonText } from "../../common/ButtonLink";
 import { ReactComponent as MessageIcon } from "./../../assets/icons/message.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsDarkTheme, switchIsDarkTheme } from "../../themeSlice";
-import cat from "./../../assets/photos/cat.jpg";
+import profilePicture from "./../../assets/photos/profilePicture.jpg";
 
 const Header = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
@@ -32,7 +32,7 @@ const Header = () => {
           {isDarkTheme ? <DarkThemeSwitchButton /> : <LightThemeSwitchButton />}
         </ThemeSwitchButton>
       </ThemeSwitch>
-      <Photo src={cat} alt="cat" />
+      <Photo src={profilePicture} alt="Profile picture" />
       <Details>
         <Announcement>This is</Announcement>
         <Name>Kalina Jakubowska</Name>
