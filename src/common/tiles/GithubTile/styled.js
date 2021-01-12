@@ -42,6 +42,7 @@ export const GithubTitle = styled.div`
 export const GithubDescription = styled.p`
   line-height: 1.4;
   margin: 0 0 16px 0;
+  flex-grow: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 14px;
