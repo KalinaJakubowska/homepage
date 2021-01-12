@@ -12,6 +12,7 @@ import { selectGithubProjects } from "./../../githubSlice";
 import GithubTile from "../../common/tiles/GithubTile";
 import { selectError, selectLoading } from "../../githubSlice";
 import Checker from "../../common/Checker";
+import { githubUserName } from "../../common/personalInfo";
 
 const Github = () => {
   const githubProjects = useSelector(selectGithubProjects);
@@ -28,15 +29,18 @@ const Github = () => {
 
       <Checker isLoading={isLoading} isError={isError}>
         <GithubTilesContainer>
-          {githubProjects.map((project) => (
-            <GithubTile
-              name={project.name}
-              description={project.description}
-              homepage={project.homepage}
-              html_url={project.html_url}
-              key={nanoid()}
-            />
-          ))}
+          {githubProjects.map(
+            (project) =>
+              project.name === githubUserName || (
+                <GithubTile
+                  name={project.name}
+                  description={project.description}
+                  homepage={project.homepage}
+                  html_url={project.html_url}
+                  key={nanoid()}
+                />
+              )
+          )}
         </GithubTilesContainer>
       </Checker>
     </>
