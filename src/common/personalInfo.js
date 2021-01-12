@@ -48,3 +48,10 @@ export const personalInfo = [
 ];
 
 export const githubUserName = "KalinaJakubowska";
+
+export const socialMediaLinks = {
+  linkedin: "https://www.linkedin.com/in/kalinajakubowska",
+  github: "https://github.com/KalinaJakubowska",
+  instagram: "https://www.instagram.com/witillie/",
+  facebook: "https://www.facebook.com/kalina.brzezinska",
+};

@@ -11,6 +11,7 @@ import {
   StyledLinkedinLogo,
   Link,
 } from "./styled";
+import { socialMediaLinks } from "./../../common/personalInfo";
 
 const Footer = () => {
   return (
@@ -25,16 +26,16 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <Link href="https://github.com/KalinaJakubowska">
+        <Link href={socialMediaLinks.github}>
           <StyledGithubLogo />
         </Link>
-        <Link href="https://www.facebook.com/kalina.brzezinska">
+        <Link href={socialMediaLinks.facebook}>
           <StyledFacebookLogo />
         </Link>
-        <Link href="https://www.linkedin.com/in/kalina-j-80a6031aa/">
+        <Link href={socialMediaLinks.linkedin}>
           <StyledLinkedinLogo />
         </Link>
-        <Link href="https://www.instagram.com/witillie/">
+        <Link href={socialMediaLinks.instagram}>
           <StyledInstagramLogo />
         </Link>
       </LogosContainer>
