@@ -20,7 +20,7 @@ const Github = () => {
   const isError = useSelector(selectError);
 
   return (
-    <>
+    <article>
       <GithubHeader>
         <StyledGithubLogo />
         <Title>Portfolio</Title>
@@ -43,7 +43,7 @@ const Github = () => {
           )}
         </GithubTilesContainer>
       </Checker>
-    </>
+    </article>
   );
 };
 
