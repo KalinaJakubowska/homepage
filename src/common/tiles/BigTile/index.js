@@ -3,7 +3,7 @@ import { BigTileWrapper, Title, List, ListItem, Icon, Point } from "./styled";
 
 const BigTile = ({ title, icon, list, underline }) => {
   return (
-    <BigTileWrapper>
+    <BigTileWrapper as="section">
       <Title underline={underline}>
         {title}
         <Icon src={icon}></Icon>
