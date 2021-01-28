@@ -22,7 +22,7 @@ export const StyledGithubLogo = styled(GithubLogo)`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.h2`
   font-size: 30px;
   line-height: 1.2;
   font-weight: 900;
