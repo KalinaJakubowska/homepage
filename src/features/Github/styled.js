@@ -43,7 +43,8 @@ export const Description = styled.p`
   }
 `;
 
-export const GithubTilesContainer = styled.div`
+export const GithubTilesContainer = styled.ul`
+  padding-left: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;

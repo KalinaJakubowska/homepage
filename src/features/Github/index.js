@@ -32,7 +32,7 @@ const Github = () => {
           {githubProjects.map(
             (project) =>
               project.name === githubUserName || (
-                <GithubTile
+                <GithubTile as="li"
                   name={project.name}
                   description={project.description}
                   homepage={project.homepage}
