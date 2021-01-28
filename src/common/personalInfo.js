@@ -35,9 +35,9 @@ export const personalInfo = [
     icon: rocket,
     list: [
       "Typescript",
-      "Gatsby.js",
       "Node.js",
       "Unit testing",
+      "Gatsby.js",
       "React Context",
       "JS classes",
       "Cypress",
@@ -52,6 +52,6 @@ export const githubUserName = "KalinaJakubowska";
 export const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/kalinajakubowska",
   github: "https://github.com/KalinaJakubowska",
-  instagram: "https://www.instagram.com/witillie/",
-  facebook: "https://www.facebook.com/kalina.brzezinska",
+  instagram: "https://www.instagram.com/kalina.jakubowska",
+  facebook: "https://www.facebook.com/kaljakubowska",
 };
