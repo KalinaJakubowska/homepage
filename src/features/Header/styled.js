@@ -51,7 +51,7 @@ export const Announcement = styled.p`
   margin: 0;
 `;
 
-export const Name = styled.p`
+export const Name = styled.h1`
   margin: 12px 0 0 0;
   font-weight: 900;
   font-size: 38px;
