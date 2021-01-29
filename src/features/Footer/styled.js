@@ -79,69 +79,65 @@ export const LogosContainer = styled.div`
   }
 `;
 
+const iconsStyles = {
+  width: "48px",
+  height: "48px",
+  "margin-right": "24px",
+  transition: "fill 0.3s",
+};
+
+const iconsBigMobileStyles = {
+  width: "32px",
+  height: "32px",
+  "margin-right": "16px",
+};
+
 export const StyledGithubLogo = styled(GithubLogo)`
   fill: ${({ theme }) => theme.color.title};
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
+  ${iconsStyles}
 
   :hover {
     fill: ${({ theme }) => theme.color.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
+    ${iconsBigMobileStyles}
   }
 `;
 
 export const StyledFacebookLogo = styled(FacebookLogo)`
   fill: ${({ theme }) => theme.color.title};
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
+  ${iconsStyles}
 
   :hover {
     fill: ${({ theme }) => theme.color.button};
   }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
+    ${iconsBigMobileStyles}
   }
 `;
 
 export const StyledInstagramLogo = styled(InstagramLogo)`
   fill: ${({ theme }) => theme.color.title};
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
+  ${iconsStyles}
 
   :hover {
     fill: ${({ theme }) => theme.color.button};
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
+    ${iconsBigMobileStyles}
   }
 `;
 
 export const StyledLinkedinLogo = styled(LinkedinLogo)`
   fill: ${({ theme }) => theme.color.title};
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
+  ${iconsStyles}
 
   :hover {
     fill: ${({ theme }) => theme.color.button};
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px;
+    ${iconsBigMobileStyles}
   }
 `;
-
-export const Link = styled.a``;

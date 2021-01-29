@@ -9,7 +9,6 @@ import {
   StyledFacebookLogo,
   StyledInstagramLogo,
   StyledLinkedinLogo,
-  Link,
 } from "./styled";
 import { socialMediaLinks } from "./../../common/personalInfo";
 
@@ -26,18 +25,18 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <Link href={socialMediaLinks.github}>
+        <a href={socialMediaLinks.github}>
           <StyledGithubLogo />
-        </Link>
-        <Link href={socialMediaLinks.facebook}>
+        </a>
+        <a href={socialMediaLinks.facebook}>
           <StyledFacebookLogo />
-        </Link>
-        <Link href={socialMediaLinks.linkedin}>
+        </a>
+        <a href={socialMediaLinks.linkedin}>
           <StyledLinkedinLogo />
-        </Link>
-        <Link href={socialMediaLinks.instagram}>
+        </a>
+        <a href={socialMediaLinks.instagram}>
           <StyledInstagramLogo />
-        </Link>
+        </a>
       </LogosContainer>
     </FooterWrapper>
   );
