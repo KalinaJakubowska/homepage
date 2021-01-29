@@ -15,7 +15,6 @@ const Homepage = () => (
         title={sectionInfo.title}
         icon={sectionInfo.icon}
         list={sectionInfo.list}
-        underline={sectionInfo.underline}
       />
     ))}
     <Github />

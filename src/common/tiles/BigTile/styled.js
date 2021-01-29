@@ -20,9 +20,7 @@ export const Title = styled.h2`
   line-height: 1.2;
   margin: 0px;
   padding-bottom: 15px;
-  border-bottom: 1px solid
-    ${({ theme, underline }) =>
-      underline ? theme.colors.mercury : theme.color.bigTileTitleUnderline};
+  border-bottom: 1px solid ${({ theme }) => theme.color.bigTileTitleUnderline};
   color: ${({ theme }) => theme.color.title};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {

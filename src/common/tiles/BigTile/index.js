@@ -1,10 +1,10 @@
 import React from "react";
 import { BigTileWrapper, Title, List, ListItem, Icon, Point } from "./styled";
 
-const BigTile = ({ title, icon, list, underline }) => {
+const BigTile = ({ title, icon, list }) => {
   return (
     <BigTileWrapper as="section">
-      <Title underline={underline}>
+      <Title>
         {title}
         <Icon src={icon}></Icon>
       </Title>
