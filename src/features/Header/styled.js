@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.header`
   display: flex;
   margin: 100px auto 56px;
-  align-items: start;
+  align-items: center;
   position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
