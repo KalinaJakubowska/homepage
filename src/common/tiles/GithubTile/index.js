@@ -8,11 +8,14 @@ import {
 } from "./styled";
 
 const GithubTile = ({ name, description, homepage, html_url }) => {
-  name = (name[0].toUpperCase() + name.substring(1)).split("-").join(" ");
+  const formattedName = (name[0].toUpperCase() + name.substring(1)).replaceAll(
+    "-",
+    " "
+  );
 
   return (
     <GithubTileWrapper>
-      <GithubTitle>{name}</GithubTitle>
+      <GithubTitle>{formattedName}</GithubTitle>
       {description && <GithubDescription>{description}</GithubDescription>}
       <div>
         {homepage && (
