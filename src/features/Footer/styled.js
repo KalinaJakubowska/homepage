@@ -35,6 +35,7 @@ export const Email = styled.a`
   font-weight: 900;
   color: ${({ theme }) => theme.color.title};
   margin-top: 24px;
+  transition: color 0.3s;
 
   :hover {
     color: ${({ theme }) => theme.color.button};

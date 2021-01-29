@@ -7,6 +7,7 @@ export const GithubTileWrapper = styled(TileWrapper)`
   justify-content: space-between;
   border: 6px solid rgba(209, 213, 218, 0.3);
   padding: 56px;
+  transition: border-color 0.3s;
 
   :hover {
     border: 6px solid ${({ theme }) => theme.color.githubTileHover};
@@ -67,6 +68,7 @@ export const GithubLink = styled.a`
   display: inline;
   color: ${({ theme }) => theme.color.button};
   border-bottom: 1px solid ${({theme}) => theme.color.githubTileHover};
+  transition: filter 0.3s;
 
   :hover {
     filter: brightness(120%);
