@@ -33,12 +33,13 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   justify-content: space-between;
-  margin: 32px 0 0 0;
+  margin: 32px 0 0;
   grid-gap: 8px;
   padding-left: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     grid-template-columns: 1fr;
+    margin: 16px 0 0;
   }
 `;
 
