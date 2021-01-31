@@ -13,6 +13,7 @@ const colors = {
   whiteLiliac: "#FBFBFE",
   mercury: "#E5E5E5",
   dodgerBlue: "#2188FF",
+  gray: "rgba(54, 54, 54, 0.72)",
 };
 
 export const theme = {
@@ -38,10 +39,10 @@ export const darkTheme = {
     title: colors.white,
     button: colors.dodgerBlue,
     text: colors.white,
-    tileBackground: "rgba(54, 54, 54, 0.72)",
+    tileBackground: colors.gray,
     background: colors.mineShaft,
     githubTileHover: "rgba(3, 102, 214, 0.5)",
-    themeSwitchBackground: "rgba(54, 54, 54, 0.72)",
+    themeSwitchBackground: colors.gray,
     themeSwitchBorder: colors.white,
     githubTileTitle: colors.white,
   },
