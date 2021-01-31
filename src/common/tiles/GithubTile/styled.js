@@ -67,7 +67,7 @@ export const GithubLink = styled.a`
   text-decoration: none;
   display: inline;
   color: ${({ theme }) => theme.color.button};
-  border-bottom: 1px solid ${({theme}) => theme.color.githubTileHover};
+  border-bottom: 1px solid ${({ theme }) => theme.color.githubTileHover};
   transition: filter 0.3s;
 
   :hover {

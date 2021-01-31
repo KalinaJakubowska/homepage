@@ -14,7 +14,10 @@ import { ReactComponent as DarkThemeSwitchButton } from "./darkTheme.svg";
 import { ButtonLink, ButtonText } from "../../common/ButtonLink";
 import { ReactComponent as MessageIcon } from "./message.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsDarkTheme, switchIsDarkTheme } from "../../common/theme/themeSlice";
+import {
+  selectIsDarkTheme,
+  switchIsDarkTheme,
+} from "../../common/theme/themeSlice";
 import profilePicture from "./profilePicture.jpg";
 
 const Header = () => {

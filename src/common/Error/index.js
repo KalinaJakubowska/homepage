@@ -11,7 +11,9 @@ const Error = () => (
       Sorry, failed to load Github projects. You can check them directly on
       Github.
     </Explanation>
-    <ButtonLink href="https://github.com/KalinaJakubowska">Go to Github</ButtonLink>
+    <ButtonLink href="https://github.com/KalinaJakubowska">
+      Go to Github
+    </ButtonLink>
   </ErrorWrapper>
 );
 
