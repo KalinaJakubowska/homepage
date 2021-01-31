@@ -5,13 +5,11 @@ import {
   fetchGithubProjectsError,
   fetchGithubProjectsSuccess,
 } from "./githubSlice";
+import { apiLink } from "./common/personalInfo";
 
 function* fetchGithubProjectsHandler() {
   try {
-    const githubData = yield call(
-      getApiData,
-      "https://api.github.com/users/KalinaJakubowska/repos"
-    );
+    const githubData = yield call(getApiData, apiLink);
     yield put(fetchGithubProjectsSuccess(githubData));
   } catch (error) {
     yield put(fetchGithubProjectsError(error));
