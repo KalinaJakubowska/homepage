@@ -1,10 +1,10 @@
 import React from "react";
 import { nanoid } from "@reduxjs/toolkit";
-import Github from "./../features/Github/index";
+import Github from "./Github";
 import BigTile from "./../common/tiles/BigTile";
 import { personalInfo } from "./../common/personalInfo";
-import Header from "../features/Header";
-import Footer from "../features/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Homepage = () => (
   <>

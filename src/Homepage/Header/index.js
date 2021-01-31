@@ -9,13 +9,13 @@ import {
   ThemeSwitch,
   ThemeSwitchButton,
 } from "./styled";
-import { ReactComponent as LightThemeSwitchButton } from "./../../assets/icons/lightTheme.svg";
-import { ReactComponent as DarkThemeSwitchButton } from "./../../assets/icons/darkTheme.svg";
+import { ReactComponent as LightThemeSwitchButton } from "./lightTheme.svg";
+import { ReactComponent as DarkThemeSwitchButton } from "./darkTheme.svg";
 import { ButtonLink, ButtonText } from "../../common/ButtonLink";
-import { ReactComponent as MessageIcon } from "./../../assets/icons/message.svg";
+import { ReactComponent as MessageIcon } from "./message.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsDarkTheme, switchIsDarkTheme } from "../../themeSlice";
-import profilePicture from "./../../assets/photos/profilePicture.jpg";
+import { selectIsDarkTheme, switchIsDarkTheme } from "../../common/theme/themeSlice";
+import profilePicture from "./profilePicture.jpg";
 
 const Header = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);

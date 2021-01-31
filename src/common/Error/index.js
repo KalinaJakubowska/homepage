@@ -1,6 +1,6 @@
 import React from "react";
 import { ErrorWrapper, Alert, Explanation } from "./styled";
-import { ReactComponent as DangerIcon } from "./../../assets/icons/danger.svg";
+import { ReactComponent as DangerIcon } from "./danger.svg";
 import { ButtonLink } from "../ButtonLink";
 
 const Error = () => (

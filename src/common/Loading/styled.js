@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as LoadingIcon } from "./../../assets/icons/loading.svg";
+import { ReactComponent as LoadingIcon } from "./loading.svg";
 
 export const LoadingContainer = styled.div`
   width: 100%;
