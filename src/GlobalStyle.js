@@ -10,10 +10,10 @@ export const GlobalStyle = createGlobalStyle`
    ::before,
    ::after {
       box-sizing: inherit;
-      overflow-wrap: anywhere;
    }
 
    body {
+      overflow-wrap: anywhere;
       color: ${({ theme }) => theme.color.text};
       font-family: 'Inter', sans-serif;
       letter-spacing: 0.05em;
