@@ -10,6 +10,7 @@ const githubSlice = createSlice({
   reducers: {
     fetchGithubProjects: (state) => {
       state.loading = true;
+      state.githubProjects = [];
     },
     fetchGithubProjectsSuccess: (state, { payload: githubProjects }) => {
       state.githubProjects = githubProjects;
