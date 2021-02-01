@@ -6,7 +6,7 @@ const BigTile = ({ title, icon, list }) => {
     <BigTileWrapper as="section">
       <Title>
         {title}
-        <Icon src={icon}></Icon>
+        <Icon src={icon} alt=""></Icon>
       </Title>
       <List>
         {list.map((item) => (
