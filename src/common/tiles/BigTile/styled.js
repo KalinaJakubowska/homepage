@@ -56,7 +56,7 @@ export const ListItem = styled.li`
   }
 `;
 
-export const Point = styled.div`
+export const Point = styled.span`
   width: 9px;
   height: 9px;
   border-radius: 50%;
