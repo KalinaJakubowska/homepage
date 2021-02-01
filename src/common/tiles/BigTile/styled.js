@@ -57,6 +57,7 @@ export const ListItem = styled.li`
 `;
 
 export const Point = styled.span`
+  flex-shrink: 0;
   width: 9px;
   height: 9px;
   border-radius: 50%;
