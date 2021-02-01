@@ -15,6 +15,8 @@ export const BigTileWrapper = styled(TileWrapper)`
 `;
 
 export const Title = styled.h2`
+  display: flex;
+  align-items: center;
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2;
@@ -65,5 +67,9 @@ export const Point = styled.div`
 export const Icon = styled.img`
   height: 24px;
   width: auto;
-  margin-left: 16px;
+  margin-left: 12px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
+    height: 20px;
+  }
 `;
