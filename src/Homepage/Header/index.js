@@ -18,7 +18,7 @@ import {
   selectIsDarkTheme,
   switchIsDarkTheme,
 } from "../../common/theme/themeSlice";
-import profilePicture from "./profilePicture.jpg";
+import profilePicture from "./profilePicture.webp";
 
 const Header = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
