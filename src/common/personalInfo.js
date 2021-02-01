@@ -1,5 +1,5 @@
-import rocket from "./../assets/icons/rocket.svg";
-import tools from "./../assets/icons/tools.svg";
+import rocket from "./icons/rocket.svg";
+import tools from "./icons/tools.svg";
 
 export const personalInfo = [
   {
