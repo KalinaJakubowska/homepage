@@ -25,16 +25,16 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <a href={socialMediaLinks.github}>
+        <a href={socialMediaLinks.github} target="_blank" rel="noreferrer">
           <StyledGithubLogo />
         </a>
-        <a href={socialMediaLinks.facebook}>
+        <a href={socialMediaLinks.facebook} target="_blank" rel="noreferrer">
           <StyledFacebookLogo />
         </a>
-        <a href={socialMediaLinks.linkedin}>
+        <a href={socialMediaLinks.linkedin} target="_blank" rel="noreferrer">
           <StyledLinkedinLogo />
         </a>
-        <a href={socialMediaLinks.instagram}>
+        <a href={socialMediaLinks.instagram} target="_blank" rel="noreferrer">
           <StyledInstagramLogo />
         </a>
       </LogosContainer>
