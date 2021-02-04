@@ -22,8 +22,8 @@ export const Title = styled.h2`
   line-height: 1.2;
   margin: 0px;
   padding-bottom: 15px;
-  border-bottom: 1px solid ${({ theme }) => theme.color.bigTileTitleUnderline};
-  color: ${({ theme }) => theme.color.title};
+  border-bottom: 1px solid ${({ theme }) => theme.elementColor.bigTileTitleUnderline};
+  color: ${({ theme }) => theme.elementColor.title};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 18px;
@@ -61,7 +61,7 @@ export const Point = styled.span`
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.color.button};
+  background-color: ${({ theme }) => theme.elementColor.button};
   margin-right: 16px;
 `;
 

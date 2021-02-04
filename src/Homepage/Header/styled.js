@@ -56,7 +56,7 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   line-height: 1.3;
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 22px;
@@ -76,7 +76,7 @@ export const Description = styled.p`
 `;
 
 export const ThemeSwitch = styled.div`
-  background-color: ${({ theme }) => theme.color.themeSwitchBackground};
+  background-color: ${({ theme }) => theme.elementColor.themeSwitchBackground};
   width: 47px;
   height: 25px;
   top: 0;
@@ -84,7 +84,7 @@ export const ThemeSwitch = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
-  border: 1px solid ${({ theme }) => theme.color.themeSwitchBorder};
+  border: 1px solid ${({ theme }) => theme.elementColor.themeSwitchBorder};
   border-radius: 25%/50%;
   padding: 2px;
   transition: all 0.5s;

@@ -14,10 +14,10 @@ export const GlobalStyle = createGlobalStyle`
 
    body {
       overflow-wrap: anywhere;
-      color: ${({ theme }) => theme.color.text};
+      color: ${({ theme }) => theme.elementColor.text};
       font-family: 'Inter', sans-serif;
       letter-spacing: 0.05em;
-      background: ${({ theme }) => theme.color.background};
+      background: ${({ theme }) => theme.elementColor.background};
       min-height: 100vh;
       max-width: 1244px;
       padding: 14px;

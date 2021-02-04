@@ -4,7 +4,7 @@ export const ButtonLink = styled.a`
   text-decoration: none;
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.color.button};
+  background-color: ${({ theme }) => theme.elementColor.button};
   color: ${({ theme }) => theme.colors.white};
   font-size: 20px;
   line-height: 1.2;

@@ -33,12 +33,12 @@ export const Email = styled.a`
   font-size: 32px;
   line-height: 1.2;
   font-weight: 900;
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
   margin-top: 24px;
   transition: color 0.3s;
 
   :hover {
-    color: ${({ theme }) => theme.color.button};
+    color: ${({ theme }) => theme.elementColor.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigScreen}px) {
@@ -59,7 +59,7 @@ export const Email = styled.a`
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
   margin: 24px 0 0;
   line-height: 1.4;
 
@@ -94,11 +94,11 @@ const iconsBigMobileStyles = {
 };
 
 export const StyledGithubLogo = styled(GithubLogo)`
-  fill: ${({ theme }) => theme.color.title};
+  fill: ${({ theme }) => theme.elementColor.title};
   ${iconsStyles}
 
   :hover {
-    fill: ${({ theme }) => theme.color.button};
+    fill: ${({ theme }) => theme.elementColor.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
@@ -107,11 +107,11 @@ export const StyledGithubLogo = styled(GithubLogo)`
 `;
 
 export const StyledFacebookLogo = styled(FacebookLogo)`
-  fill: ${({ theme }) => theme.color.title};
+  fill: ${({ theme }) => theme.elementColor.title};
   ${iconsStyles}
 
   :hover {
-    fill: ${({ theme }) => theme.color.button};
+    fill: ${({ theme }) => theme.elementColor.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
@@ -120,11 +120,11 @@ export const StyledFacebookLogo = styled(FacebookLogo)`
 `;
 
 export const StyledInstagramLogo = styled(InstagramLogo)`
-  fill: ${({ theme }) => theme.color.title};
+  fill: ${({ theme }) => theme.elementColor.title};
   ${iconsStyles}
 
   :hover {
-    fill: ${({ theme }) => theme.color.button};
+    fill: ${({ theme }) => theme.elementColor.button};
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     ${iconsBigMobileStyles}
@@ -132,11 +132,11 @@ export const StyledInstagramLogo = styled(InstagramLogo)`
 `;
 
 export const StyledLinkedinLogo = styled(LinkedinLogo)`
-  fill: ${({ theme }) => theme.color.title};
+  fill: ${({ theme }) => theme.elementColor.title};
   ${iconsStyles}
 
   :hover {
-    fill: ${({ theme }) => theme.color.button};
+    fill: ${({ theme }) => theme.elementColor.button};
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     ${iconsBigMobileStyles}

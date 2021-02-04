@@ -6,7 +6,7 @@ export const GithubHeader = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 72px;
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
     margin-top: 48px;
@@ -14,7 +14,7 @@ export const GithubHeader = styled.div`
 `;
 
 export const StyledGithubLogo = styled(GithubLogo)`
-  fill: ${({ theme }) => theme.color.button};
+  fill: ${({ theme }) => theme.elementColor.button};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     width: 32px;

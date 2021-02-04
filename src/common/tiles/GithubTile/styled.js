@@ -10,7 +10,7 @@ export const GithubTileWrapper = styled(TileWrapper)`
   transition: border-color 0.3s;
 
   :hover {
-    border: 6px solid ${({ theme }) => theme.color.githubTileHover};
+    border: 6px solid ${({ theme }) => theme.elementColor.githubTileHover};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.ipad}px) {
@@ -30,7 +30,7 @@ export const GithubTitle = styled.div`
   font-weight: bold;
   font-size: 24px;
   line-height: 1.4;
-  color: ${({ theme }) => theme.color.githubTileTitle};
+  color: ${({ theme }) => theme.elementColor.githubTileTitle};
   margin-bottom: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
@@ -66,8 +66,8 @@ export const GithubLinkWrapper = styled.span`
 export const GithubLink = styled.a`
   text-decoration: none;
   display: inline;
-  color: ${({ theme }) => theme.color.button};
-  border-bottom: 1px solid ${({ theme }) => theme.color.githubTileHover};
+  color: ${({ theme }) => theme.elementColor.button};
+  border-bottom: 1px solid ${({ theme }) => theme.elementColor.githubTileHover};
   transition: filter 0.3s;
 
   :hover {

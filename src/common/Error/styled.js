@@ -14,7 +14,7 @@ export const ErrorWrapper = styled.div`
 `;
 
 export const Alert = styled.p`
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
   font-size: 24px;
   line-height: 1.2;
   font-weight: bold;
@@ -27,7 +27,7 @@ export const Alert = styled.p`
 `;
 
 export const Explanation = styled.p`
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
   margin: 32px 0 0;
   font-size: 20px;
   line-height: 1.4;

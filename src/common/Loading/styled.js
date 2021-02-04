@@ -12,7 +12,7 @@ export const Info = styled.p`
   font-size: 20px;
   line-height: 1.4;
   margin: 88px 0 48px;
-  color: ${({ theme }) => theme.color.title};
+  color: ${({ theme }) => theme.elementColor.title};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
     font-size: 16px;
