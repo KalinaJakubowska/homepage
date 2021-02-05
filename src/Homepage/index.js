@@ -5,9 +5,10 @@ import BigTile from "./../common/tiles/BigTile";
 import { personalInfo } from "./../common/personalInfo";
 import Header from "./Header";
 import Footer from "./Footer";
+import { HomepageWrapper } from "./styled";
 
 const Homepage = () => (
-  <>
+  <HomepageWrapper>
     <Header />
     {personalInfo.map((sectionInfo) => (
       <BigTile
@@ -19,6 +20,6 @@ const Homepage = () => (
     ))}
     <Github />
     <Footer />
-  </>
+  </HomepageWrapper>
 );
 export default Homepage;

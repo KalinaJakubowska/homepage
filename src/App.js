@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./common/theme/theme";
 import Homepage from "./Homepage";
 import { selectIsDarkTheme } from "./common/theme/themeSlice";
+import { PageWrapper } from "./styled";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,7 +19,9 @@ function App() {
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
       <GlobalStyle />
-      <Homepage />
+      <PageWrapper>
+        <Homepage />
+      </PageWrapper>
     </ThemeProvider>
   );
 }
