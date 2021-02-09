@@ -8,14 +8,13 @@ import {
   Link,
 } from "./styled";
 import { socialMedia } from "./socialMedia";
+import { email } from "./../../common/personalInfo";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <Message>Let's talk!</Message>
-      <Email href="mailto:kaljakubowska@gmail.pl">
-        kaljakubowska@gmail.com
-      </Email>
+      <Email href={`mailto:${email}`}>{email}</Email>
       <Description>
         I’m always open to new projects whenever I have the time. If you have a
         website, dashboard or mobile app in mind and need some help to make your

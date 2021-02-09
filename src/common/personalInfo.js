@@ -1,6 +1,8 @@
 import rocket from "./icons/rocket.svg";
 import tools from "./icons/tools.svg";
 
+export const email = "kaljakubowska@gmail.pl";
+
 export const personalInfo = [
   {
     title: "My skillset includes",

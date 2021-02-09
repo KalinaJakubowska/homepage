@@ -19,6 +19,7 @@ import {
   switchIsDarkTheme,
 } from "../../common/theme/themeSlice";
 import profilePicture from "./profilePicture.webp";
+import { email } from "./../../common/personalInfo";
 
 const Header = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
@@ -43,7 +44,7 @@ const Header = () => {
           I'm a passionate Frontend Developer in love with React, currently
           looking for new job opportunities.
         </Description>
-        <ButtonLink href="mailto:kaljakubowska@gmail.pl">
+        <ButtonLink href={`mailto:${email}`}>
           <MessageIcon />
           <ButtonText>Hire Me</ButtonText>
         </ButtonLink>
