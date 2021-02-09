@@ -5,6 +5,7 @@ import {
   Email,
   Description,
   LogosContainer,
+  Link,
 } from "./styled";
 import { socialMedia } from "./socialMedia";
 
@@ -22,9 +23,9 @@ const Footer = () => {
       </Description>
       <LogosContainer>
         {socialMedia.map(({ name, link, Icon }) => (
-          <a href={link} title={name} target="_blank" rel="noreferrer">
+          <Link href={link} title={name} target="_blank" rel="noreferrer">
             <Icon />
-          </a>
+          </Link>
         ))}
       </LogosContainer>
     </FooterWrapper>

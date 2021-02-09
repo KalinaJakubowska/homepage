@@ -76,11 +76,14 @@ export const LogosContainer = styled.div`
   }
 `;
 
+export const Link = styled.a`
+  margin-right: 24px;
+`;
+
 export const styleLogo = (Logo) => styled(Logo)`
   fill: ${({ theme }) => theme.elementColor.title};
   width: 48px;
   height: 48px;
-  margin-right: 24px;
   transition: fill 0.3s;
 
   :hover {
