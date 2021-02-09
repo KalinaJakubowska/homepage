@@ -1,10 +1,7 @@
 import axios from "axios";
 
-export const getApiData = async (link) => {
-  let response;
-  await axios
+export const getApiData = (link) =>
+  axios
     .get(link)
-    .then((data) => (response = data))
+    .then((response) => response.data)
     .catch(() => console.log("error"));
-  return response.data;
-};
