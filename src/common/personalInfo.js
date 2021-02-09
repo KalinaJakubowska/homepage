@@ -49,10 +49,3 @@ export const personalInfo = [
 export const githubUserName = "KalinaJakubowska";
 
 export const apiLink = `https://api.github.com/users/${githubUserName}/repos`;
-
-export const socialMediaLinks = {
-  linkedin: "https://www.linkedin.com/in/kalinajakubowska",
-  github: "https://github.com/KalinaJakubowska",
-  instagram: "https://www.instagram.com/kalina.jakubowska",
-  facebook: "https://www.facebook.com/kaljakubowska",
-};

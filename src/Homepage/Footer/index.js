@@ -5,12 +5,8 @@ import {
   Email,
   Description,
   LogosContainer,
-  StyledGithubLogo,
-  StyledFacebookLogo,
-  StyledInstagramLogo,
-  StyledLinkedinLogo,
 } from "./styled";
-import { socialMediaLinks } from "./../../common/personalInfo";
+import { socialMedia } from "./socialMedia";
 
 const Footer = () => {
   return (
@@ -25,18 +21,11 @@ const Footer = () => {
         ideas come to life, feel free to contact me
       </Description>
       <LogosContainer>
-        <a href={socialMediaLinks.github} target="_blank" rel="noreferrer">
-          <StyledGithubLogo />
-        </a>
-        <a href={socialMediaLinks.facebook} target="_blank" rel="noreferrer">
-          <StyledFacebookLogo />
-        </a>
-        <a href={socialMediaLinks.linkedin} target="_blank" rel="noreferrer">
-          <StyledLinkedinLogo />
-        </a>
-        <a href={socialMediaLinks.instagram} target="_blank" rel="noreferrer">
-          <StyledInstagramLogo />
-        </a>
+        {socialMedia.map(({ name, link, Icon }) => (
+          <a href={link} title={name} target="_blank" rel="noreferrer">
+            <Icon />
+          </a>
+        ))}
       </LogosContainer>
     </FooterWrapper>
   );

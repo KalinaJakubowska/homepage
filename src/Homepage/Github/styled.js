@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GithubLogo } from "./../../assets/logos/githubLogo.svg";
+import { ReactComponent as GithubLogo } from "./../../common/logos/githubLogo.svg";
 
 export const GithubHeader = styled.div`
   display: flex;

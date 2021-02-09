@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as GithubLogo } from "./../../assets/logos/githubLogo.svg";
-import { ReactComponent as FacebookLogo } from "./../../assets/logos/facebookLogo.svg";
-import { ReactComponent as LinkedinLogo } from "./../../assets/logos/linkedinLogo.svg";
-import { ReactComponent as InstagramLogo } from "./../../assets/logos/instagramLogo.svg";
 
 export const FooterWrapper = styled.footer`
   margin: 140px 0 0;
@@ -80,65 +76,20 @@ export const LogosContainer = styled.div`
   }
 `;
 
-const iconsStyles = {
-  width: "48px",
-  height: "48px",
-  "margin-right": "24px",
-  transition: "fill 0.3s",
-};
-
-const iconsBigMobileStyles = {
-  width: "32px",
-  height: "32px",
-  "margin-right": "16px",
-};
-
-export const StyledGithubLogo = styled(GithubLogo)`
+export const styleLogo = (Logo) => styled(Logo)`
   fill: ${({ theme }) => theme.elementColor.title};
-  ${iconsStyles}
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+  transition: fill 0.3s;
 
   :hover {
     fill: ${({ theme }) => theme.elementColor.button};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    ${iconsBigMobileStyles}
-  }
-`;
-
-export const StyledFacebookLogo = styled(FacebookLogo)`
-  fill: ${({ theme }) => theme.elementColor.title};
-  ${iconsStyles}
-
-  :hover {
-    fill: ${({ theme }) => theme.elementColor.button};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    ${iconsBigMobileStyles}
-  }
-`;
-
-export const StyledInstagramLogo = styled(InstagramLogo)`
-  fill: ${({ theme }) => theme.elementColor.title};
-  ${iconsStyles}
-
-  :hover {
-    fill: ${({ theme }) => theme.elementColor.button};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    ${iconsBigMobileStyles}
-  }
-`;
-
-export const StyledLinkedinLogo = styled(LinkedinLogo)`
-  fill: ${({ theme }) => theme.elementColor.title};
-  ${iconsStyles}
-
-  :hover {
-    fill: ${({ theme }) => theme.elementColor.button};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.bigMobile}px) {
-    ${iconsBigMobileStyles}
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
   }
 `;
