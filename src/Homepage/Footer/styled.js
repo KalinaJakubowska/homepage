@@ -82,8 +82,6 @@ export const Link = styled.a`
 
 export const styleLogo = (Logo) => styled(Logo)`
   fill: ${({ theme }) => theme.elementColor.title};
-  width: 48px;
-  height: 48px;
   transition: fill 0.3s;
 
   :hover {
