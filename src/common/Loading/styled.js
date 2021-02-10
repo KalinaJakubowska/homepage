@@ -22,15 +22,9 @@ export const Info = styled.p`
 
 export const StyledLoadingIcon = styled(LoadingIcon)`
   height: 160px;
-  animation: spin;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: spin 1s linear infinite;
 
   @keyframes spin {
-    from {
-      transform: unset;
-    }
     to {
       transform: rotate(360deg);
     }
