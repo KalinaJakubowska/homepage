@@ -1,5 +1,5 @@
-import rocket from "./icons/rocket.svg";
-import tools from "./icons/tools.svg";
+import rocket from "./icons/rocket.png";
+import tools from "./icons/tools.png";
 
 export const email = "kaljakubowska@gmail.pl";
 
