@@ -22,7 +22,13 @@ const Footer = () => {
       </Description>
       <LogosContainer>
         {socialMedia.map(({ name, link, Icon }) => (
-          <Link href={link} title={name} target="_blank" rel="noreferrer">
+          <Link
+            key={name}
+            href={link}
+            title={name}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon />
           </Link>
         ))}
