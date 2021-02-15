@@ -1,4 +1,5 @@
 import { GlobalStyle } from "./GlobalStyle";
+import { Normalize } from "styled-normalize";
 import { useEffect } from "react";
 import { fetchGithubProjects } from "./githubSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
+      <Normalize />
       <GlobalStyle />
       <PageWrapper>
         <Homepage />
