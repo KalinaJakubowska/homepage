@@ -41,9 +41,7 @@ export const personalInfo = [
       "Unit testing",
       "Gatsby.js",
       "React Context",
-      "JS classes",
       "Cypress",
-      "React Native",
     ],
   },
 ];
