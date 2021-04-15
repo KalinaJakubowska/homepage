@@ -39,7 +39,6 @@ export const personalInfo = [
       "Typescript",
       "Node.js",
       "Unit testing",
-      "Gatsby.js",
       "React Context",
       "Cypress",
     ],
